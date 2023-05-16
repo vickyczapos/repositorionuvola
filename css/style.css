@@ -1,0 +1,98 @@
+
+header{
+    background-color: rgb(221, 168, 183);
+    text-align: left;
+    font-size: 32px
+    
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+footer{
+    background-color: rgb(221, 168, 183);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: min-content min-content min-content;
+
+    grid-template-areas: 
+    "title          ...           img"
+    "description    description   img"
+    "button         ...           img"
+    ;
+    }  
+
+    .grid .grid__title{
+        grid-area: title; 
+    }
+    
+    .grid .grid__description{
+        grid-area: description;
+    }
+
+    .grid .grid__button{
+        grid-area: button;
+    }
+
+    .grid .grid__img{
+        grid-area: img;
+    }
+
+
+    .grid__button:hover{
+    padding: 2rem;
+    
+    }  
+
+    .grid__button{
+    background-color: darksalmon;
+    transition: .5s;
+    }
+
+    @media screen and (max-width: 400px) {
+        header{
+            text-align: center;
+            font-size: 10px;
+           
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+        header{
+            text-align: center;
+            font-size: 20px;
+            
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        header{
+        text-align: center;
+        font-size: 28px;
+      
+        }
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        padding-right: 2rem;
+    }
